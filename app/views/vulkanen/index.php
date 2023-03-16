@@ -16,10 +16,10 @@
             <thead>
                 <tr>
                     <th>Naam</th>
-                    <th>Club</th>
-                    <th>Leeftijd</th>
-                    <th>Nationaliteit</th>
-                    <th>Salaris (miljoen)</th>
+                    <th>Hoogte (m)</th>
+                    <th>Land</th>
+                    <th>Laatste uitbarsting</th>
+                    <th>Aantal slachtoffers</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,11 +27,11 @@
                 foreach ($data["vulkanen"] as $row) {
                 ?>
                     <tr>
-                        <td><?= $row->Naam ?></td>
-                        <td><?= $row->Club ?></td>
-                        <td><?= $row->Leeftijd ?></td>
-                        <td><?= $row->Nationaliteit ?></td>
-                        <td><?= $row->Salaris ?></td>
+                        <td><?= $row->naam ?></td>
+                        <td><?= $row->hoogte ?></td>
+                        <td><?= $row->land ?></td>
+                        <td><?= $row->laatsteuitbarsting ?></td>
+                        <td><?= $row->slachtoffers ?></td>
                     </tr>
                 <?php
                 }

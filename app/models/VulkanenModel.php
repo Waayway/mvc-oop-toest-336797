@@ -17,7 +17,7 @@ class VulkanenModel
             hoogte SMALLINT(6) NOT NULL,
             land VARCHAR(200) NOT NULL,
             laatsteuitbarsting VARCHAR(4) NOT NULL,
-            slachtoffers TINYINT(3)
+            slachtoffers TINYINT(3) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
         $this->db->query($sql);
         $this->db->execute();
